@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FriendFinder :: Survey</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="app/public/style.css" type="text/css">
+</head>
+
+<body class="survey-body">
+    <div class="text-center survey-header">
+        <h1>Welcome to the Friend Finder Survey!</h1>
+    </div>
+    <div class="container survey-content">
+        <!-- <div class="panel panel-default"> -->
+        <!-- <div class="panel-heading text-center"> -->
+        <h3 class="survey-tagline">Tell us your name and upload your photo so other Friend Finders can see you when there's a match!</h3>
+        <!-- </div> -->
+        <div class="col-md-6 col-md-offset-3 survey-name-photo-input">
+            <!-- <div class="panel-body"> -->
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="photo">Link to your photo</label>
+                    <input type="text" class="form-control" id="photo" required>
+                </div>
+            </form>
+            <!-- </div> -->
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+            <h4>Question 1</h4>
+            <p>I enjoy spending time at home, cooking a good meal and having a glass of wine.</p>
+            <select id="q1" class="q">
+                <option value="" disabled selected>Select an option</option>
+                <option value="5">5 (Strongly Agree)</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1 (Strongly Disagree)</option>
+            </select>
+            <h4>Question 2</h4>
+            <p>I enjoy being outdoors, experiencing nature through hiking, camping, or swimming holes.</p>
+            <select id="q2" class="q">
+                <option value="" disabled selected>Select an option</option>
+                <option value="5">5 (Strongly Agree)</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1 (Strongly Disagree)</option>
+            </select>
+            <h4>Question 3</h4>
+            <p>I have trouble maintaining an even disposition when things are tough.</p>
+            <select id="q3" class="q">
+                <option value="" disabled selected>Select an option</option>
+                <option value="5">5 (Strongly Agree)</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1 (Strongly Disagree)</option>
+            </select>
+            <h4>Question 4</h4>
+            <p>I rarely have enough time in the day to accomplish the things I want to get done.</p>
+            <select id="q4" class="q">
+                <option value="" disabled selected>Select an option</option>
+                <option value="5">5 (Strongly Agree)</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1 (Strongly Disagree)</option>
+            </select>
+            <h4>Question 5</h4>
+            <p>I enjoy traveling and prioritize exploring new places over owning things.</p>
+            <select id="q5" class="q">
+                <option value="" disabled selected>Select an option</option>
+                <option value="5">5 (Strongly Agree)</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1 (Strongly Disagree)</option>
+            </select>
+            <h4>Question 6</h4>
+            <p>I never meet a stranger; I thrive in social situations and have not problem initiating conversation with someone I've never met.</p>
+            <select id="q6" class="q">
+                <option value="" disabled selected>Select an option</option>
+                <option value="5">5 (Strongly Agree)</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1 (Strongly Disagree)</option>
+            </select>
+            <h4>Question 7</h4>
+            <p>Being active is very important to me. I exercise at least three times a week, usually more.</p>
+            <select id="q7" class="q">
+                <option value="" disabled selected>Select an option</option>
+                <option value="5">5 (Strongly Agree)</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1 (Strongly Disagree)</option>
+            </select>
+            <h4>Question 8</h4>
+            <p>I enjoy watching television and am always on the lookout for a new movie or show.</p>
+            <select id="q8" class="q">
+                <option value="" disabled selected>Select an option</option>
+                <option value="5">5 (Strongly Agree)</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1 (Strongly Disagree)</option>
+            </select>
+            <h4>Question 9</h4>
+            <p>I'm a foodie and I don't mind spending money for a fancy dinner.</p>
+            <select id="q9" class="q">
+                <option value="" disabled selected>Select an option</option>
+                <option value="5">5 (Strongly Agree)</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1 (Strongly Disagree)</option>
+            </select>
+            <h4>Question 10</h4>
+            <p>I am passionate about politics and social justice and I regularly keep up with political news.</p>
+            <select id="q10" class="q">
+                <option value="" disabled selected>Select an option</option>
+                <option value="5">5 (Strongly Agree)</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1 (Strongly Disagree)</option>
+            </select>
+        </div>
+        <!-- </div> -->
+    </div>
+    <div class="text-center">
+        <a href="#">
+            <button type="button" class="btn" id="submit" data-toggle="modal" data-target="#best-match-modal">
+                <p>Submit Answers</p>
+            </button>
+        </a>
+    </div>
+    <div class="text-center">
+        <a href="/">
+            <button type="button" class="btn" id="home">
+                <p>Home</p>
+            </button>
+        </a>
+    </div>
+    <footer>
+            <div> 
+                <p><a  href="/api/friends" role="button">API Friends Link</a> | <a href="https://github.com/pekwalla/friendfinder#" role="button">GitHud Repo</a></p>
+                <p class="copyright">&copy; Peggy Ekwalla 2019</p>
+            </div>
+    </footer>
+    <!-- ****************************************************************************************** -->
+    <!-- Modal -->
+    <div class="modal fade" id="best-match-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h5 class="modal-title" id="myModalLabel">Your best match is...</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center" id="bestMatch-name"></div>
+                    <div class="text-center" id="bestMatch-photo"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ****************************************************************************************** -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  
+    
+    <script>
+    
+    </script>
+    <script type="text/javascript">
+    $(function() {
+        $("#name").focus();
+    });
+    $("#submit").on("click", function(e) {
+        e.preventDefault();
+        function formValidation() {
+            var validForm = true;
+            $(".form-control").each(function() {
+                if ($(this).val() === "") {
+                    validForm = false;
+                    
+                }
+            });
+            $(".q").each(function() {
+                if ($(this).val() === null) {
+                    validForm = false;
+                }
+                // console.log($(this).val());
+            });
+            if ($("#q1").val() === "" || $("#q2").val() === "" || $("#q3").val() === "" || $("#q4").val() === "" || $("#q5").val() === "" || $("#q6").val() === "" || $("#q7").val() === "" || $("#q8").val() === "" || $("#q9").val() === "" || $("#q10").val() === "") {
+                validForm = false;
+            }
+            return validForm;
+        }
+        if (formValidation() == true) {
+            var newUser = {
+                name: $("#name").val().trim(),
+                photo: $("#photo").val().trim(),
+                scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val()]
+            }
+            var currentURL = window.location.origin;
+            $.post(currentURL + "/api/friends", newUser).done(function(bestMatch) {
+                console.log(bestMatch);
+                $("#bestMatch-name").html("<h2 style='font-size: 4em;'>" + bestMatch.name + "</h2>");
+                $("#bestMatch-photo").html("<img src='" + bestMatch.photo + "' alt='best match photo'>");
+            });
+            $("#name").val("");
+            $("#photo").val("");
+            $(".q").val("");
+            $("#name").focus();
+        } else {
+            alert(" The form is incomplete. Fill out all the Information");
+            return false;
+        }
+    });
+    </script>
+</body>
+
+</html>
